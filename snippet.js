@@ -1,6 +1,8 @@
 
-///// this snippet belong at the end of ssb-interop.js
-// linux: /usr/lib/slack/resources/app.asar.u/src/static
+// in linux this snippet belong at the end of
+//     /usr/lib/slack/resources/app.asar.unpacked/src/static/ssb-interop.js
+// start Slack as: env SLACK_DEVELOPER_MENU=true slack
+// then Ctrl-Alt-I to display developer tools
 
 // First make sure the wrapper app is loaded
 document.addEventListener("DOMContentLoaded", function() {
@@ -17,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         :root {
             /* Modify these to change your theme colors: */
             /** RS solarized dark */ 
-            --primary: #6c71c4;
+            --primary: #d33682;
             --text: #839496;
             --background: #002b36;
             --background-elevated: #073642;
@@ -45,10 +47,18 @@ document.addEventListener("DOMContentLoaded", function() {
         .c-message, .c-virtual_list__item {
             background-color: var(--background) !important;
         }
-        
-        .c-mrkdwn__broadcast,team__display-name {
+                                     
+                                                   
+        .c-mrkdwn__broadcast, 
+        .team__display-name {
             background-color: var(--background) !important;
             color: var(--primary) !important;
+        }
+
+        .c-message_attachment,
+        .c-message__attachments .c-message_attachment__text {
+            background-color: var(--background) !important;
+            color: var(--text) !important;
         }
     `;
 
