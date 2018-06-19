@@ -981,3 +981,35 @@ ts-jumper, ts-jumper.active {
 ts-jumper ts-jumper-container {
   box-shadow: 0 5px 20px rgba(0,0,0,1);
 }
+
+
+/**********additional changes 2018.06***************/
+
+
+div.c-message.c-message--light.c-message--hover {
+    color: var(--text) !important;
+    background-color: var(--background) !important;
+}
+
+span.c-message__body,
+a.c-message__sender_link,
+span.c-message_attachment__media_trigger.c-message_attachment__media_trigger--caption,
+div.p-message_pane__foreword__description span {
+    color: var(--text) !important;
+}
+
+pre.special_formatting {
+    background-color: var(--background) !important;
+    color: var(--text) !important;
+    border: solid;
+    border-width: 1 px !important;
+}
+
+.c-message, .c-virtual_list__item {
+    background-color: var(--background) !important;
+}
+
+.c-mrkdwn__broadcast,team__display-name {
+    background-color: var(--background) !important;
+    color: var(--primary) !important;
+}
