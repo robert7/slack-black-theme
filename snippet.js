@@ -1,6 +1,8 @@
 /// UNFINISHED - maybe futile alltogether
 
-
+const githubUser = 'robert7';
+const branch = 'master';
+const themeName = 'solarized-dark';
 
 // First make sure the wrapper app is loaded
 document.addEventListener("DOMContentLoaded", function() {
@@ -9,9 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let webviews = document.querySelectorAll(".TeamView webview");
 
     // Fetch our CSS in parallel ahead of time
-    const githubUser = 'robert7';
-    const branch = 'master';
-    const themeName = 'solarized-dark';
     const cssPath = `https://cdn.rawgit.com/${githubUser}/slack-black-theme/${branch}/custom.css`;
     const cssPath2 = `https://cdn.rawgit.com/${githubUser}/slack-black-theme/${branch}/custom-${themeName}.css`;
     let cssPromise = fetch(cssPath).then(response => response.text());
