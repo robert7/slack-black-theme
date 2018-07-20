@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         :root {
             /* Modify these to change your theme colors: */
             /** RS solarized dark */ 
-            --primary: #d33682;
+            --primary: #268bd2; /* #d33682; */
             --text: #839496;
             --background: #002b36;
             --background-elevated: #073642;
